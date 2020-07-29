@@ -1,0 +1,97 @@
+body
+{
+    background-color: $color-3;
+    font-family: $font-family;
+    height: 100vh;
+}
+
+.wrapper
+{
+    .intro-container
+    {
+        margin: 20px 0 0 0;
+        text-align:center;
+        @include flex(column,center,center);
+        .heading-1
+        {
+            color: $color-1;
+            font-size: $font-size-2;
+            font-weight: map-get($map: $font-weight, $key: light );
+            margin: 0;
+        }
+        .heading-2
+        {
+            color: $color-1;
+            font-size: $font-size-2;
+            font-weight: map-get($map: $font-weight, $key: semi-bold );
+            margin: 0;
+        }
+        .description
+        {
+            color: $color-2;
+            font-size: $font-size-5;
+            font-weight: map-get($map: $font-weight, $key: light );
+            width: 40%;
+        }
+
+    }
+    .card-container
+    {
+        margin: 20px 0 ;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33% 30% 33%;
+        grid-template-rows: repeat(4,150px);
+        grid-column-gap: 20px;
+        .card-1
+        {
+            grid-area: 2/1/4/2;
+        }
+        .card-2
+        {
+            grid-area: 1/2/3/3;
+
+        }
+        .card-3
+        {
+            grid-area: 3/2/5/3;
+
+        }
+        .card-4
+        {
+            grid-area: 2/3/4/4;
+
+        }
+    }
+
+}
+
+@include smartphone
+{
+    .wrapper
+    {
+        .intro-container
+        {
+            @include flex(column,center,center);
+            .heading-1
+            {
+                font-size: $font-size-3;
+            }
+            .heading-2
+            {
+                font-size: $font-size-3;
+            }
+            .description
+            {
+                width: 70%;
+            }
+
+        }
+        .card-container
+        {
+            width: 100%;
+            @include flex(column,center,center);
+        }
+
+    }
+}

@@ -1,0 +1,48 @@
+.card
+{
+    @include flex(column,flex-start,center);
+    box-shadow: $box-shadow;
+    padding: 5px 30px;
+    border-radius: $border-radius;
+    background-color: $color-neutral-1;
+    margin: 10px;
+    .card-heading
+    {
+        color: $color-1;
+        margin: 0;
+    }
+    .card-description
+    {
+        color: $color-2;
+        font-size: $font-size-5;
+        margin: 0 0 50px 0;
+    }
+    svg
+    {
+        align-self: flex-end;
+    }
+}
+.card-1
+{
+    border-top:4px solid $cyan;
+}
+.card-2
+{
+    border-top:4px solid $red;
+}
+.card-3
+{
+    border-top:4px solid $orange;
+}
+.card-4
+{
+    border-top:4px solid $blue;
+}
+@include smartphone
+{
+    .card
+    {
+        width: 350px;
+        height: 200px;
+    }
+}
