@@ -71,7 +71,6 @@ body
 {
     .wrapper
     {
-        outline: solid;
         width: 100%;
         .intro-container
         {
@@ -92,7 +91,6 @@ body
         }
         .card-container
         {
-            outline: solid;
             width: 100%;
             @include flex(column,center,center);
         }

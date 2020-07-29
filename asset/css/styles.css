@@ -211,7 +211,6 @@ body {
 
 @media screen and (max-width: 1150px) {
   .wrapper {
-    outline: solid;
     width: 100%;
   }
   .wrapper .intro-container {
@@ -239,7 +238,6 @@ body {
     width: 70%;
   }
   .wrapper .card-container {
-    outline: solid;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
