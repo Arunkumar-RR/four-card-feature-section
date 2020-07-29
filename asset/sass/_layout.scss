@@ -30,7 +30,7 @@ body
         {
             color: $color-2;
             font-size: $font-size-5;
-            font-weight: map-get($map: $font-weight, $key: light );
+            font-weight: map-get($map: $font-weight, $key: regular );
             width: 40%;
         }
 
