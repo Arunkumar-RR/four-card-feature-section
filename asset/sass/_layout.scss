@@ -37,6 +37,7 @@ body
     }
     .card-container
     {
+        
         margin: 20px 0 ;
         width: 100%;
         display: grid;
@@ -70,6 +71,8 @@ body
 {
     .wrapper
     {
+        outline: solid;
+        width: 100%;
         .intro-container
         {
             @include flex(column,center,center);
@@ -89,6 +92,7 @@ body
         }
         .card-container
         {
+            outline: solid;
             width: 100%;
             @include flex(column,center,center);
         }
